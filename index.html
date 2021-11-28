@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            box-shadow: 0 0 20px black;
+            margin: 100px auto;
+            padding: 30px 30px;
+        }
+    </style>
+    <script>
+        function fun() {
+            var paraRef = document.getElementById("p1")
+
+            paraRef.innerText = "Good Morning  Manish", paraRef;
+            paraRef.style.color = "red"
+        }
+
+        function fun1() {
+            var paraRef = document.getElementById("p1")
+
+            paraRef.innerText = "Good Afternoon Manish"
+        }
+
+        function fun2() {
+            var paraRef = document.getElementById("p1")
+
+            paraRef.innerText = "Good Night Manish"
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p id="p1">Hello Manish</p>
+        <button onclick="fun()" id="btn1">Good Morning</button>
+        <button onclick="fun1()" id="btn2">Good Afternoon</button>
+        <button onclick="fun2()" id="btn3">Good Night</button>
+    </div>
+</body>
+
+</html>
